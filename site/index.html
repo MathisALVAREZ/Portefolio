@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Développeur Backend & Infrastructure</title>
+  <meta name="description" content="Développeur backend, infrastructure & DevOps. Spécialisé en architecture scalable, sécurité système et automatisation." />
+  <meta name="author" content="Votre Nom" />
+  <meta name="robots" content="index, follow" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Portfolio — Développeur Backend & Infrastructure" />
+  <meta property="og:description" content="Développeur backend, infrastructure & DevOps. Architecture scalable, sécurité, automatisation." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://votredomaine.fr" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Portfolio — Développeur Backend & Infrastructure" />
+  <meta name="twitter:description" content="Développeur backend, infrastructure & DevOps." />
+  <!-- Favicon inline SVG -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ───────────────────────── NAV ───────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">[</span>
+        <span class="logo-text">dev</span>
+        <span class="logo-accent">@sys</span>
+        <span class="logo-bracket">]</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mob-link">À propos</a></li>
+      <li><a href="#skills" class="mob-link">Compétences</a></li>
+      <li><a href="#projects" class="mob-link">Projets</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ───────────────────────── HERO ───────────────────────── -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="hero-glow"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag reveal">
+        <span class="tag-dot"></span>
+        Disponible pour missions freelance
+      </div>
+      <h1 class="hero-title reveal delay-1">
+        Architecte<br />
+        <span class="title-accent">Backend</span> &amp;<br />
+        Infrastructure
+      </h1>
+      <p class="hero-subtitle reveal delay-2">
+        Je conçois des systèmes robustes, sécurisés et scalables.<br />
+        De l'API à l'orchestration Docker, du code propre à la prod stable.
+      </p>
+      <div class="hero-actions reveal delay-3">
+        <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+        <a href="#contact" class="btn btn-ghost">Me contacter</a>
+      </div>
+      <div class="hero-stats reveal delay-4">
+        <div class="stat">
+          <span class="stat-num">70<span class="stat-plus">+</span></span>
+          <span class="stat-label">Personnes gérées</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">13K<span class="stat-plus">+</span></span>
+          <span class="stat-label">Membres communauté</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">3</span>
+          <span class="stat-label">Projets majeurs</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-terminal reveal delay-2">
+      <div class="terminal-header">
+        <span class="t-dot red"></span>
+        <span class="t-dot yellow"></span>
+        <span class="t-dot green"></span>
+        <span class="t-title">bash ~ portfolio</span>
+      </div>
+      <div class="terminal-body">
+        <div class="t-line"><span class="t-prompt">$</span> whoami</div>
+        <div class="t-line t-output">Développeur Backend &amp; DevOps</div>
+        <div class="t-line"><span class="t-prompt">$</span> cat skills.txt</div>
+        <div class="t-line t-output">Python · Docker · Linux · Flask</div>
+        <div class="t-line t-output">MariaDB · Nginx · Git · Graylog</div>
+        <div class="t-line"><span class="t-prompt">$</span> uptime</div>
+        <div class="t-line t-output">Passionné depuis <span class="t-accent">toujours</span></div>
+        <div class="t-line"><span class="t-prompt">$</span> <span class="t-cursor">█</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── ABOUT ───────────────────────── -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-label reveal">// 01 — À propos</div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h2 class="section-title">Un développeur qui pense<br /><span class="accent">systèmes</span>, pas juste code.</h2>
+          <p>Je suis un développeur backend et ingénieur infrastructure passionné par la construction de systèmes fiables et performants. Mon approche : comprendre le problème avant d'écrire la première ligne de code.</p>
+          <p>Autodidacte dans l'âme, j'ai forgé mes compétences en gérant des projets réels à grande échelle — de l'infrastructure d'un serveur communautaire de 13 000+ membres à l'automatisation complète de plateformes d'hébergement.</p>
+          <p>Au-delà du code, j'écris. Mon thriller psychologique <em>Les Clés de l'Invisible</em> témoigne d'une capacité à structurer des idées complexes et à les rendre accessibles.</p>
+          <div class="about-philosophy">
+            <span class="phi-icon">//</span>
+            <p>« La simplicité est la sophistication suprême. Un système qui marche silencieusement vaut mieux qu'un système bruyant qui s'effondre. »</p>
+          </div>
+        </div>
+        <div class="about-card reveal delay-1">
+          <div class="card-inner">
+            <div class="card-section">
+              <h4>Formation</h4>
+              <ul>
+                <li>Autodidacte en développement backend</li>
+                <li>Expérience terrain — projets réels</li>
+                <li>Gestion de crise &amp; infrastructure</li>
+              </ul>
+            </div>
+            <div class="card-section">
+              <h4>Langues</h4>
+              <ul>
+                <li>Français — Natif</li>
+                <li>Anglais — Technique courant</li>
+              </ul>
+            </div>
+            <div class="card-section">
+              <h4>Intérêts</h4>
+              <ul>
+                <li>Cybersécurité offensive/défensive</li>
+                <li>Architecture microservices</li>
+                <li>Écriture &amp; narration</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── SKILLS ───────────────────────── -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <div class="section-label reveal">// 02 — Compétences</div>
+      <h2 class="section-title reveal">Stack technique</h2>
+      <div class="skills-grid">
+
+        <div class="skill-category reveal">
+          <h3 class="cat-title">Backend & API</h3>
+          <div class="skill-pills">
+            <span class="pill">Python</span>
+            <span class="pill">Flask</span>
+            <span class="pill">REST API</span>
+            <span class="pill">FastAPI</span>
+            <span class="pill">Bash</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal delay-1">
+          <h3 class="cat-title">Infrastructure & DevOps</h3>
+          <div class="skill-pills">
+            <span class="pill">Docker</span>
+            <span class="pill">Docker Compose</span>
+            <span class="pill">Nginx</span>
+            <span class="pill">Linux (Debian/Ubuntu)</span>
+            <span class="pill">VPS management</span>
+            <span class="pill">SSH / SFTP</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal delay-2">
+          <h3 class="cat-title">Bases de données & Logs</h3>
+          <div class="skill-pills">
+            <span class="pill">MariaDB</span>
+            <span class="pill">MySQL</span>
+            <span class="pill">Graylog</span>
+            <span class="pill">ElasticSearch</span>
+            <span class="pill">Redis</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal delay-3">
+          <h3 class="cat-title">Sécurité & Réseau</h3>
+          <div class="skill-pills">
+            <span class="pill">Fail2Ban</span>
+            <span class="pill">UFW / iptables</span>
+            <span class="pill">Let's Encrypt / TLS</span>
+            <span class="pill">OWASP basics</span>
+            <span class="pill">Hardening Linux</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal delay-1">
+          <h3 class="cat-title">Outils & Collaboration</h3>
+          <div class="skill-pills">
+            <span class="pill">Git / GitHub</span>
+            <span class="pill">Discord (API / bot)</span>
+            <span class="pill">VS Code</span>
+            <span class="pill">Postman</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal delay-2">
+          <h3 class="cat-title">Soft skills</h3>
+          <div class="skill-pills">
+            <span class="pill">Gestion d'équipe</span>
+            <span class="pill">Gestion de crise</span>
+            <span class="pill">Communication</span>
+            <span class="pill">Autonomie</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── PROJECTS ───────────────────────── -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <div class="section-label reveal">// 03 — Projets</div>
+      <h2 class="section-title reveal">Ce que j'ai construit</h2>
+
+      <!-- Project 1 -->
+      <div class="project-card reveal">
+        <div class="project-meta">
+          <span class="project-num">01</span>
+          <div class="project-tags">
+            <span class="ptag">Community</span>
+            <span class="ptag">Infrastructure</span>
+            <span class="ptag">Management</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Evogen RP</h3>
+          <p class="project-desc">Serveur FiveM communautaire roleplay à grande échelle. J'ai pris en charge la direction technique et managériale d'une communauté de 13 000+ membres Discord, avec une équipe de plus de 70 collaborateurs.</p>
+          <div class="project-highlights">
+            <div class="highlight">
+              <span class="h-icon">◆</span>
+              <div>
+                <strong>Gestion d'équipe</strong>
+                <p>Coordination de 70+ membres staff — modération, développeurs, builders. Organisation hiérarchique, process de recrutement, onboarding.</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <span class="h-icon">◆</span>
+              <div>
+                <strong>Infrastructure serveur</strong>
+                <p>Maintenance et déploiement de l'environnement FiveM, gestion des ressources, optimisation des performances.</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <span class="h-icon">◆</span>
+              <div>
+                <strong>Gestion de crise</strong>
+                <p>Résolution d'incidents en temps réel, communication transparente avec la communauté, maintien de la cohésion.</p>
+              </div>
+            </div>
+          </div>
+          <div class="project-stats">
+            <div class="pstat"><strong>13 000+</strong><span>Membres Discord</span></div>
+            <div class="pstat"><strong>70+</strong><span>Staff géré</span></div>
+            <div class="pstat"><strong>FiveM</strong><span>Plateforme</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card featured reveal">
+        <div class="project-meta">
+          <span class="project-num">02</span>
+          <div class="project-tags">
+            <span class="ptag">Docker</span>
+            <span class="ptag">Flask API</span>
+            <span class="ptag">MariaDB</span>
+            <span class="ptag">Graylog</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Hébergeur FiveM <span class="featured-badge">Featured</span></h3>
+          <p class="project-desc">Plateforme d'hébergement automatisée pour serveurs FiveM. Chaque instance est isolée dans son propre container Docker avec accès SFTP dédié, API de gestion et centralisation des logs.</p>
+          <div class="project-architecture">
+            <div class="arch-title">Architecture technique</div>
+            <div class="arch-diagram">
+              <div class="arch-node">Client API</div>
+              <div class="arch-arrow">→</div>
+              <div class="arch-node accent">Flask API</div>
+              <div class="arch-arrow">→</div>
+              <div class="arch-node">Docker Engine</div>
+              <div class="arch-arrow">→</div>
+              <div class="arch-node">Container N</div>
+            </div>
+            <div class="arch-side">
+              <span>MariaDB — Gestion utilisateurs &amp; configs</span>
+              <span>Graylog — Centralisation logs</span>
+              <span>SFTP isolé par instance</span>
+            </div>
+          </div>
+          <div class="project-highlights">
+            <div class="highlight">
+              <span class="h-icon">◆</span>
+              <div>
+                <strong>Déploiement automatisé</strong>
+                <p>Via l'API Flask : création/suppression de containers, attribution des ports, configuration réseau automatique.</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <span class="h-icon">◆</span>
+              <div>
+                <strong>Isolation totale</strong>
+                <p>Chaque serveur dans son propre container Docker avec SFTP dédié et accès réseau cloisonné.</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <span class="h-icon">◆</span>
+              <div>
+                <strong>Observabilité</strong>
+                <p>Logging centralisé via Graylog + ElasticSearch pour la détection d'incidents en temps réel.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 — Livre -->
+      <div class="project-card book-card reveal">
+        <div class="project-meta">
+          <span class="project-num">03</span>
+          <div class="project-tags">
+            <span class="ptag">Écriture</span>
+            <span class="ptag">Thriller</span>
+            <span class="ptag">Amazon</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="book-layout">
+            <div class="book-cover">
+              <div class="book-3d">
+                <div class="book-face front">
+                  <div class="book-cover-inner">
+                    <div class="book-cover-title">Les Clés de<br />l'Invisible</div>
+                    <div class="book-cover-sub">Thriller Psychologique</div>
+                  </div>
+                </div>
+                <div class="book-spine"></div>
+              </div>
+            </div>
+            <div class="book-info">
+              <h3 class="project-title">Les Clés de l'Invisible</h3>
+              <p class="project-desc">Un thriller psychologique qui explore les zones d'ombre de l'esprit humain. Ce projet illustre ma capacité à structurer des récits complexes et à maintenir une tension narrative sur la durée.</p>
+              <p class="project-desc">Disponible en format numérique et papier sur Amazon.</p>
+              <a href="https://www.amazon.fr" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                Voir sur Amazon →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ───────────────────────── TIMELINE ───────────────────────── -->
+  <section class="section timeline-section">
+    <div class="container">
+      <div class="section-label reveal">// 04 — Chronologie</div>
+      <h2 class="section-title reveal">Parcours</h2>
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-date">2024 — présent</div>
+          <div class="tl-content">
+            <h4>Hébergeur FiveM Docker</h4>
+            <p>Conception et développement d'une plateforme d'hébergement automatisée. API Flask, Docker, MariaDB, Graylog.</p>
+          </div>
+        </div>
+        <div class="tl-item reveal delay-1">
+          <div class="tl-dot"></div>
+          <div class="tl-date">2023</div>
+          <div class="tl-content">
+            <h4>Publication — Les Clés de l'Invisible</h4>
+            <p>Premier thriller psychologique publié sur Amazon. Écriture, édition et auto-publication.</p>
+          </div>
+        </div>
+        <div class="tl-item reveal delay-2">
+          <div class="tl-dot"></div>
+          <div class="tl-date">2022 — 2024</div>
+          <div class="tl-content">
+            <h4>Evogen RP — Direction technique &amp; managériale</h4>
+            <p>Gestion d'une communauté FiveM de 13 000+ membres. Staff de 70+ personnes. Infrastructure, crise, développement.</p>
+          </div>
+        </div>
+        <div class="tl-item reveal delay-3">
+          <div class="tl-dot"></div>
+          <div class="tl-date">2020 — présent</div>
+          <div class="tl-content">
+            <h4>Formation autodidacte</h4>
+            <p>Python, Docker, Linux, Nginx, sécurité. Apprentissage par la pratique sur des projets réels.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── CONTACT ───────────────────────── -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-label reveal">// 05 — Contact</div>
+      <div class="contact-grid">
+        <div class="contact-text reveal">
+          <h2 class="section-title">Travaillons<br /><span class="accent">ensemble.</span></h2>
+          <p>Disponible pour des missions freelance, des collaborations techniques ou simplement un échange. Réponse sous 24h.</p>
+          <div class="contact-infos">
+            <div class="contact-info-item">
+              <span class="ci-label">Email</span>
+              <a href="mailto:contact@votredomaine.fr">contact@votredomaine.fr</a>
+            </div>
+            <div class="contact-info-item">
+              <span class="ci-label">GitHub</span>
+              <a href="https://github.com/votreprofil" target="_blank" rel="noopener noreferrer">github.com/votreprofil</a>
+            </div>
+            <div class="contact-info-item">
+              <span class="ci-label">Disponibilité</span>
+              <span class="available-badge"><span class="avail-dot"></span> Disponible</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal delay-1">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="name" placeholder="Jean Dupont" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="jean@exemple.fr" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="subject">Sujet</label>
+              <input type="text" id="subject" name="subject" placeholder="Mission freelance / Collaboration..." required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet ou votre demande..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span class="btn-text">Envoyer le message</span>
+              <span class="btn-loading" hidden>Envoi...</span>
+            </button>
+            <div class="form-status" id="formStatus" hidden></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── FOOTER ───────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-bracket">[</span>
+          <span class="logo-text">dev</span>
+          <span class="logo-accent">@sys</span>
+          <span class="logo-bracket">]</span>
+          <p>Développeur Backend &amp; Infrastructure</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">À propos</a>
+          <a href="#skills">Compétences</a>
+          <a href="#projects">Projets</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-copy">
+          <p>&copy; 2025 — Tous droits réservés</p>
+          <p>Fait avec précision et café.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
