@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect width="800" height="450" fill="#0f1620"/>
+  <rect x="1" y="1" width="798" height="448" fill="none" stroke="#1c2a3a" stroke-width="2"/>
+  <line x1="0" y1="0" x2="800" y2="450" stroke="#16202c" stroke-width="2"/>
+  <line x1="800" y1="0" x2="0" y2="450" stroke="#16202c" stroke-width="2"/>
+  <g fill="#3b9eff" opacity="0.85">
+    <rect x="356" y="190" width="88" height="60" rx="6" fill="none" stroke="#3b9eff" stroke-width="3"/>
+    <circle cx="378" cy="212" r="8"/>
+    <path d="M362 244l24-22 16 14 18-20 22 28z"/>
+  </g>
+  <text x="400" y="300" font-family="monospace" font-size="20" fill="#64748b"
+        text-anchor="middle">screenshot — remplace ce fichier</text>
+  <text x="400" y="328" font-family="monospace" font-size="13" fill="#3b5366"
+        text-anchor="middle">800 × 450 recommandé</text>
+</svg>

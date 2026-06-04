@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mes Livres — Mathis Alvarez</title>
+  <meta name="description" content="Les romans écrits par Mathis Alvarez : thrillers psychologiques et atmosphères sombres. Couvertures, synopsis et liens d'achat." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body>
+  <div class="page-bg"></div>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-bracket">[</span><span class="logo-text">mathis</span><span class="logo-accent">@sec</span><span class="logo-bracket">]</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">À propos</a></li>
+        <li><a href="index.html#skills">Compétences</a></li>
+        <li><a href="index.html#experiences">Expériences</a></li>
+        <li><a href="livres.html">Livres</a></li>
+        <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html#about" class="mob-link">À propos</a></li>
+      <li><a href="index.html#skills" class="mob-link">Compétences</a></li>
+      <li><a href="index.html#experiences" class="mob-link">Expériences</a></li>
+      <li><a href="livres.html" class="mob-link">Livres</a></li>
+      <li><a href="index.html#contact" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <header class="subhero">
+    <div class="container">
+      <div class="breadcrumb reveal">
+        <a href="index.html">Accueil</a><span class="sep">/</span>
+        <span class="current">Livres</span>
+      </div>
+      <div class="subhero-tags reveal">
+        <span class="ptag">Écriture</span>
+        <span class="ptag">Thriller</span>
+        <span class="ptag">Roman</span>
+      </div>
+      <h1 class="subhero-title reveal delay-1">Mes <span class="accent">livres</span></h1>
+      <p class="subhero-role reveal delay-1">Auteur — thriller &amp; atmosphères sombres</p>
+      <p class="subhero-lead reveal delay-2">
+        Quand je ne sécurise pas des systèmes, j'écris. Mes romans explorent les zones
+        d'ombre de l'esprit humain : tension, secrets et fausses pistes. Voici ma
+        bibliothèque — couvertures, synopsis et liens pour les lire.
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <div class="media-note reveal">
+      <span>📚</span>
+      <div><b>Pour chaque livre&nbsp;:</b> dépose la couverture dans <code>assets/img/livres/</code>
+      (ex. <code>cover-1.jpg</code>, format portrait ~400×600), remplace le <code>src</code> de l'image,
+      le titre, le synopsis et le lien d'achat. Duplique un bloc <code>.book-item</code> pour ajouter un livre.</div>
+    </div>
+
+    <section class="books-shelf reveal">
+
+      <!-- LIVRE 1 -->
+      <article class="book-item">
+        <div class="book-visual">
+          <div class="book-real">
+            <img src="assets/img/livres/cover-1.jpg" alt="Couverture — Les Clés de l'Invisible"
+                 onerror="this.onerror=null;this.src='assets/img/placeholder-cover.svg'" />
+          </div>
+        </div>
+        <div class="book-meta">
+          <h3>Les Clés de l'Invisible</h3>
+          <div class="book-genre">Thriller psychologique</div>
+          <span class="book-status"><span class="avail-dot" style="background:var(--green)"></span> Disponible</span>
+          <p>Un thriller qui explore les zones d'ombre de l'esprit humain. Une intrigue tendue,
+          des personnages troubles et une vérité qui se dérobe à chaque page.
+          <br><em>(Remplace ce synopsis par le vrai.)</em></p>
+          <a href="https://www.amazon.fr" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Lire / Acheter →</a>
+        </div>
+      </article>
+
+      <!-- LIVRE 2 (exemple — à compléter ou supprimer) -->
+      <article class="book-item">
+        <div class="book-visual">
+          <div class="book-real">
+            <img src="assets/img/livres/cover-2.jpg" alt="Couverture — Deuxième roman"
+                 onerror="this.onerror=null;this.src='assets/img/placeholder-cover.svg'" />
+          </div>
+        </div>
+        <div class="book-meta">
+          <h3>Titre du 2ᵉ livre</h3>
+          <div class="book-genre">Genre</div>
+          <span class="book-status soon"><span class="avail-dot" style="background:var(--yellow)"></span> Bientôt</span>
+          <p>Quelques lignes de synopsis pour donner envie. Remplace ce texte, ou supprime
+          tout ce bloc si tu n'as qu'un seul livre.</p>
+          <a href="#" class="btn btn-ghost btn-sm">À venir</a>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- A PROPOS DE L'ECRITURE -->
+    <div class="prose reveal" style="margin-top:24px;">
+      <h2>Pourquoi j'écris</h2>
+      <p>L'écriture, c'est l'autre face de mon esprit analytique. Construire une intrigue,
+      c'est comme cartographier un système : poser des règles, semer des indices, anticiper
+      le lecteur. La même rigueur, au service de l'émotion.</p>
+      <p>Mon univers de prédilection : le <strong>thriller</strong> et l'<strong>horreur psychologique</strong> —
+      des genres que j'aime aussi en tant que spectateur.</p>
+    </div>
+
+    <div class="cta-strip reveal">
+      <h3>Une question, un retour de lecture ?</h3>
+      <p>J'adore échanger avec les lecteurs — et les curieux.</p>
+      <a href="index.html#contact" class="btn btn-primary">Me contacter</a>
+    </div>
+
+    <nav class="page-nav">
+      <a href="index.html#experiences" class="prev back-link">
+        <span class="pn-label">← Retour</span>
+        <span class="pn-title">Toutes les expériences</span>
+      </a>
+      <a href="experiences/evogen-rp.html" class="next">
+        <span class="pn-label">Voir aussi →</span>
+        <span class="pn-title">Evogen RP</span>
+      </a>
+    </nav>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="nav-logo"><span class="logo-bracket">[</span><span class="logo-text">mathis</span><span class="logo-accent">@sec</span><span class="logo-bracket">]</span></span>
+          <p>Cybersécurité &amp; Ethical Hacking</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html#about">À propos</a>
+          <a href="index.html#experiences">Expériences</a>
+          <a href="livres.html">Livres</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="footer-copy"><p>&copy; 2026 Mathis Alvarez</p></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>
