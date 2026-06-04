@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!--
+  ╔══════════════════════════════════════════════════════════╗
+  ║  MODÈLE DE PAGE — duplique ce fichier pour créer une      ║
+  ║  nouvelle page (expérience, projet, passion, n'importe).  ║
+  ║                                                            ║
+  ║  1. Copie ce fichier et renomme-le (ex: mon-projet.html)  ║
+  ║  2. Remplace tout ce qui est en MAJUSCULES / « … »        ║
+  ║  3. Ajoute un lien vers la page dans index.html           ║
+  ║     (section #experiences) si tu veux qu'elle apparaisse. ║
+  ╚══════════════════════════════════════════════════════════╝
+-->
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TITRE DE LA PAGE | Mathis Alvarez</title>
+  <meta name="description" content="DESCRIPTION COURTE POUR GOOGLE (1 à 2 phrases)." />
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+</head>
+<body>
+  <div class="page-bg"></div>
+
+  <!-- NAV (ne pas toucher) -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">
+        <span class="logo-bracket">[</span><span class="logo-text">mathis</span><span class="logo-accent">@sec</span><span class="logo-bracket">]</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html#about">À propos</a></li>
+        <li><a href="../index.html#skills">Compétences</a></li>
+        <li><a href="../index.html#experiences">Expériences</a></li>
+        <li><a href="../livres.html">Livres</a></li>
+        <li><a href="../index.html#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="../index.html#about" class="mob-link">À propos</a></li>
+      <li><a href="../index.html#skills" class="mob-link">Compétences</a></li>
+      <li><a href="../index.html#experiences" class="mob-link">Expériences</a></li>
+      <li><a href="../livres.html" class="mob-link">Livres</a></li>
+      <li><a href="../index.html#contact" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ===== EN-TÊTE DE LA PAGE ===== -->
+  <header class="subhero">
+    <div class="container">
+      <div class="breadcrumb reveal">
+        <a href="../index.html">Accueil</a><span class="sep">/</span>
+        <a href="../index.html#experiences">Expériences</a><span class="sep">/</span>
+        <span class="current">TITRE COURT</span>
+      </div>
+      <div class="subhero-tags reveal">
+        <span class="ptag">TAG 1</span>
+        <span class="ptag">TAG 2</span>
+        <span class="ptag">TAG 3</span>
+      </div>
+      <h1 class="subhero-title reveal delay-1">TITRE <span class="accent">PRINCIPAL</span></h1>
+      <p class="subhero-role reveal delay-1">SOUS-TITRE / RÔLE</p>
+      <p class="subhero-lead reveal delay-2">
+        DEUX OU TROIS PHRASES D'INTRODUCTION QUI RÉSUMENT LE SUJET DE LA PAGE.
+      </p>
+      <div class="facts reveal delay-2">
+        <div class="fact"><span class="f-label">Label</span><span class="f-value">Valeur</span></div>
+        <div class="fact"><span class="f-label">Label</span><span class="f-value">Valeur</span></div>
+        <div class="fact"><span class="f-label">Label</span><span class="f-value">Valeur</span></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== CONTENU ===== -->
+  <main class="container">
+
+    <!-- Texte libre -->
+    <div class="prose reveal">
+      <div class="tldr">
+        <span class="tldr-tag">En bref</span>
+        <p>UNE PHRASE QUI RÉSUME L'ESSENTIEL.</p>
+      </div>
+
+      <h2>UN TITRE DE SECTION</h2>
+      <p>UN PARAGRAPHE. Tu peux en mettre autant que tu veux.</p>
+      <ul>
+        <li>Un point clé.</li>
+        <li>Un autre point clé.</li>
+      </ul>
+    </div>
+
+    <!-- Cartes / points forts (optionnel) -->
+    <div class="feature-grid reveal">
+      <div class="feature">
+        <div class="f-ico">⭐</div>
+        <h4>TITRE</h4>
+        <p>Description courte.</p>
+      </div>
+      <div class="feature">
+        <div class="f-ico">⚙️</div>
+        <h4>TITRE</h4>
+        <p>Description courte.</p>
+      </div>
+    </div>
+
+    <!-- Bandeau de chiffres (optionnel) -->
+    <div class="stat-banner reveal">
+      <div class="sb"><span class="sb-num">00</span><span class="sb-label">Label</span></div>
+      <div class="sb"><span class="sb-num">00</span><span class="sb-label">Label</span></div>
+      <div class="sb"><span class="sb-num">00</span><span class="sb-label">Label</span></div>
+    </div>
+
+    <!-- Galerie d'images (clic = plein écran) -->
+    <section class="media-block reveal">
+      <div class="media-head">
+        <h2 class="block-title">Galerie</h2>
+        <span class="media-count">clique pour agrandir</span>
+      </div>
+      <div class="gallery">
+        <div class="gallery-item" data-caption="Légende de l'image">
+          <img src="../assets/img/DOSSIER/IMAGE.jpg" alt="Description"
+               onerror="this.onerror=null;this.src='../assets/img/placeholder-screen.svg'" />
+          <span class="cap">Légende</span>
+        </div>
+        <!-- Duplique le bloc .gallery-item pour ajouter des images -->
+      </div>
+    </section>
+
+    <!-- Vidéo YouTube (optionnel) -->
+    <section class="media-block reveal">
+      <div class="media-head"><h2 class="block-title">Vidéo</h2></div>
+      <div class="video-grid">
+        <div>
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/TON_ID_VIDEO"
+                    title="Vidéo" loading="lazy" allowfullscreen></iframe>
+          </div>
+          <p class="video-caption">Légende de la vidéo</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Appel à l'action -->
+    <div class="cta-strip reveal">
+      <h3>TITRE D'ACCROCHE</h3>
+      <p>Une phrase.</p>
+      <a href="../index.html#contact" class="btn btn-primary">Me contacter</a>
+    </div>
+
+    <!-- Navigation bas de page -->
+    <nav class="page-nav">
+      <a href="../index.html#experiences" class="prev back-link">
+        <span class="pn-label">← Retour</span>
+        <span class="pn-title">Toutes les expériences</span>
+      </a>
+    </nav>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="nav-logo"><span class="logo-bracket">[</span><span class="logo-text">mathis</span><span class="logo-accent">@sec</span><span class="logo-bracket">]</span></span>
+          <p>Cybersécurité &amp; Ethical Hacking</p>
+        </div>
+        <div class="footer-links">
+          <a href="../index.html#about">À propos</a>
+          <a href="../index.html#experiences">Expériences</a>
+          <a href="../livres.html">Livres</a>
+          <a href="../index.html#contact">Contact</a>
+        </div>
+        <div class="footer-copy"><p>&copy; 2026 Mathis Alvarez</p></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/pages.js"></script>
+</body>
+</html>
