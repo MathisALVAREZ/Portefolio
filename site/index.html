@@ -80,6 +80,7 @@
       </p>
       <div class="hero-actions reveal delay-3">
         <a href="#experiences" class="btn btn-primary">Voir mes expériences</a>
+        <a href="assets/CV-Mathis-Alvarez.pdf" download class="btn btn-ghost">↓ Télécharger mon CV</a>
         <a href="#contact" class="btn btn-ghost">Me contacter</a>
       </div>
       <div class="hero-stats reveal delay-4">
@@ -106,16 +107,18 @@
         <span class="t-dot green"></span>
         <span class="t-title">bash ~ mathis@sec</span>
       </div>
-      <div class="terminal-body">
+      <div class="terminal-body" id="terminalBody">
         <div class="t-line"><span class="t-prompt">$</span> whoami</div>
         <div class="t-line t-output">Mathis Alvarez — Cybersécurité</div>
         <div class="t-line"><span class="t-prompt">$</span> cat role.txt</div>
         <div class="t-line t-output">Alternant RSSI @ Spirica</div>
-        <div class="t-line"><span class="t-prompt">$</span> ./skills --top</div>
-        <div class="t-line t-output">Pentest · SIEM · SOC · Python · C</div>
-        <div class="t-line"><span class="t-prompt">$</span> status</div>
-        <div class="t-line t-output"><span class="t-accent">●</span> EFREI Bordeaux — 2023→2026</div>
-        <div class="t-line"><span class="t-prompt">$</span> <span class="t-cursor">█</span></div>
+        <div class="t-line t-output">Tape <span class="t-accent">help</span> pour explorer ↓</div>
+        <div class="t-history" id="termHistory"></div>
+        <div class="t-line t-inputline">
+          <span class="t-prompt">$</span>
+          <input id="termInput" class="t-input" autocomplete="off" autocapitalize="off"
+                 spellcheck="false" aria-label="Terminal interactif" />
+        </div>
       </div>
     </div>
   </section>
@@ -253,10 +256,67 @@
     </div>
   </section>
 
+  <!-- ───────────────────────── CERTIFICATIONS ───────────────────────── -->
+  <!-- ⚙️ PERSONNALISE : adapte les certifs, l'état (done/progress/planned)
+       et le pourcentage data-pct pour chaque carte. -->
+  <section id="certs" class="section certs">
+    <div class="container">
+      <div class="section-label reveal">// 03 — Certifications &amp; objectifs</div>
+      <h2 class="section-title reveal">Montée en compétences</h2>
+      <p class="project-desc reveal" style="margin-bottom:40px;max-width:640px;">
+        Mon plan de certifications en cybersécurité — obtenues, en cours et visées.
+        <em>(À ajuster selon ta progression réelle.)</em>
+      </p>
+      <div class="certs-grid">
+
+        <div class="cert-card reveal" data-pct="55">
+          <div class="cert-top">
+            <span class="cert-name">eJPT</span>
+            <span class="cert-state progress">En cours</span>
+          </div>
+          <div class="cert-org">eLearnSecurity — Junior Penetration Tester</div>
+          <div class="cert-bar"><span></span></div>
+          <div class="cert-pct">55%</div>
+        </div>
+
+        <div class="cert-card reveal delay-1" data-pct="30">
+          <div class="cert-top">
+            <span class="cert-name">CompTIA Security+</span>
+            <span class="cert-state planned">Visée 2026</span>
+          </div>
+          <div class="cert-org">CompTIA — Fondamentaux sécurité</div>
+          <div class="cert-bar"><span></span></div>
+          <div class="cert-pct">30%</div>
+        </div>
+
+        <div class="cert-card reveal delay-2" data-pct="15">
+          <div class="cert-top">
+            <span class="cert-name">CEH</span>
+            <span class="cert-state planned">Planifiée</span>
+          </div>
+          <div class="cert-org">EC-Council — Certified Ethical Hacker</div>
+          <div class="cert-bar"><span></span></div>
+          <div class="cert-pct">15%</div>
+        </div>
+
+        <div class="cert-card reveal delay-1" data-pct="70">
+          <div class="cert-top">
+            <span class="cert-name">TryHackMe</span>
+            <span class="cert-state progress">Actif</span>
+          </div>
+          <div class="cert-org">Parcours offensif &amp; défensif — rooms complétées</div>
+          <div class="cert-bar"><span></span></div>
+          <div class="cert-pct">70%</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- ───────────────────────── EXPERIENCES ───────────────────────── -->
   <section id="experiences" class="section projects">
     <div class="container">
-      <div class="section-label reveal">// 03 — Expériences &amp; Projets</div>
+      <div class="section-label reveal">// 04 — Expériences &amp; Projets</div>
       <h2 class="section-title reveal">Chaque expérience a sa page</h2>
       <p class="project-desc reveal" style="margin-bottom:40px;max-width:640px;">
         Clique sur une carte pour ouvrir la page dédiée : contexte, missions détaillées,
@@ -355,7 +415,7 @@
   <!-- ───────────────────────── TIMELINE ───────────────────────── -->
   <section class="section timeline-section">
     <div class="container">
-      <div class="section-label reveal">// 04 — Chronologie</div>
+      <div class="section-label reveal">// 05 — Chronologie</div>
       <h2 class="section-title reveal">Parcours</h2>
       <div class="timeline">
         <div class="tl-item reveal">
@@ -405,7 +465,7 @@
   <!-- ───────────────────────── CONTACT ───────────────────────── -->
   <section id="contact" class="section contact">
     <div class="container">
-      <div class="section-label reveal">// 05 — Contact</div>
+      <div class="section-label reveal">// 06 — Contact</div>
       <div class="contact-grid">
         <div class="contact-text reveal">
           <h2 class="section-title">Échangeons<br /><span class="accent">ensemble.</span></h2>

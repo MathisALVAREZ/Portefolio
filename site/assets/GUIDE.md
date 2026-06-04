@@ -116,6 +116,27 @@ les messages par mail sans serveur, le plus simple est **Formspree** (gratuit) :
 
 ---
 
+## 🖥️ Le terminal interactif (accueil)
+
+Le terminal du hero est **interactif** : le visiteur tape des commandes
+(`help`, `whoami`, `skills`, `exp`, `certs`, `books`, `contact`, `cv`, `clear`).
+Pour modifier les réponses, ouvre `js/pages.js` → fonction `initInteractiveTerminal`
+(objet `commands`). Chaque commande est une petite fonction qui affiche des lignes.
+
+## 📄 CV téléchargeable
+
+Le bouton « Télécharger mon CV » pointe vers `assets/CV-Mathis-Alvarez.pdf`.
+Pour le mettre à jour : remplace simplement ce fichier par ton nouveau PDF
+(garde le même nom, ou change le `href` dans `index.html`).
+
+## 🎓 Certifications
+
+Section `id="certs"` dans `index.html`. Pour chaque carte `.cert-card` :
+- le `data-pct="55"` règle la **barre de progression** (0 à 100) ;
+- l'état est une classe sur `.cert-state` : `done` (vert), `progress` (bleu), `planned` (jaune) ;
+- modifie le nom, l'organisme et le pourcentage affiché.
+Duplique une carte pour en ajouter une, supprime un bloc pour en retirer.
+
 ## 🚀 Mettre en ligne
 
 Le site est servi par Nginx via Docker (`docker compose up -d`).
